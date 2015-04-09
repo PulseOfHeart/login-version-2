@@ -77,7 +77,7 @@ namespace WindowsFormsApplication1
             DialogResult dialog = MessageBox.Show("Are you sure you want to really exit ? ", "Exit", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
-                Application.Exit();
+                e.Cancel = false;
             }
             else if (dialog == DialogResult.No)
             {
